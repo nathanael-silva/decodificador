@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+    font-family: Sora, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Remove o scroll */
+    background-color: #e5e5e5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    animation: start 1s;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 10vh; /* Header ocupa 10% da altura da tela */
+    padding: 10px 20px;
+    background-color: #e5e5e5; /* Cor do header igual ao background */
+}
+
+header img {
+    height: 50px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #e5e5e5; /* Cor do main igual ao background */
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os elementos no topo */
+    width: 100%;
+    height: 80vh; /* Conteúdo principal ocupa 80% da altura da tela */
+    background-color: #ffffff; /* Cor de fundo uniforme */
+    padding: 3rem;
+    border-radius: 2em;
+    box-shadow: rgba(50, 50, 93, 0.07) 0px 50px 100px -20px, rgba(0, 0, 0, 0.227) 0px 30px 60px -30px;
+    animation: start 1s ease;
+}
+
+#textInput, #textOutput {
+    width: 45%; /* Cada seção ocupa 45% da largura da área principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textInput h1, #textOutput h1 {
+    color: #0752c2;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.text-area, .msg {
+    width: 100%;
+    height: calc(70vh - 150px); /* Altura dinâmica das caixas de texto */
+    text-transform: lowercase;
+    border-radius: 1em;
+    border: 1px #1371ff solid;
+    padding: 1em;
+    resize: none; /* Impede o redimensionamento das caixas de texto */
+}
+
+.infobtn {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #666;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 1em;
+}
+
+.cript, .descript, .copy {
+    background-color: #0752c2;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 1em;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra aos botões */
+}
+
+.cript:hover, .descript:hover, .copy:hover {
+    background-color: #6fa9ff;
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #e5e5e5; /* Cor do footer igual ao background */
+    width: 100%;
+    height: 10vh; /* Footer ocupa 10% da altura da tela */
+    text-align: center;
+    padding: 3px 0;
+    position: relative;
+
+}
